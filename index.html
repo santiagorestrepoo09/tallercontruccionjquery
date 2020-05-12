@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d911bf9c08.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="botones">
+      <!-- Google -->
+      <h1>Iniciar Sesion</h1>
+      <button id="login">
+        <i id="icong" class="fab fa-google"></i> Google
+      </button>
+
+      <!-- Facebook -->
+      <button id="facebook">
+        <i id="iconf" class="fab fa-facebook-f"></i> Facebook
+      </button>
+
+      <!-- Twitter -->
+      <button id="github">
+        <i id="iconh" class="fab fa-github"></i> GitHub
+      </button>
+    </div>
+
+    <div id="root"></div>
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAUBhtfSnIc6iUX3FdA3O4XqP4a5YOCiRA",
+        authDomain: "taller02-74c8e.firebaseapp.com",
+        databaseURL: "https://taller02-74c8e.firebaseio.com",
+        projectId: "taller02-74c8e",
+        storageBucket: "taller02-74c8e.appspot.com",
+        messagingSenderId: "920957154125",
+        appId: "1:920957154125:web:e31a5ae73bc866b5c63d04",
+        measurementId: "G-NGH4L4W0RZ",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
